@@ -1,6 +1,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
 <suite name="Smoke test" verbose="1" >
+    
+    <listeners>
+        <listener class-name="class"></listener>
+    </listeners>
     <test name="Login page Tests" >
         <packages>
             <package name="ua.alesandrahvozdenko" />
@@ -10,7 +14,7 @@
     <test name="Regression1">
         <classes>
             <class name="ua.alesandragvozdenko.tests.TestDemo"/>
-            <class name="test.sample.ParameterTest"/>
+            <class name="ua.alesandragvozdenko.tests.TestDemo2"/>
         </classes>
     </test>
 </suite>
