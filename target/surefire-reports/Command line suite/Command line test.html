@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Command line test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jan 30 20:47:46 EET 2020</td>
+<td>Started on:</td><td>Thu Jan 30 21:26:12 EET 2020</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (237 ms)</td>
+<tr><td>Total time:</td><td>20 seconds (20877 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,13 +75,13 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ua.alesandrahvozdenko.tests.TestDemo.UserPageIsDisplayedWithMainElements()'><b>UserPageIsDisplayedWithMainElements</b><br>Test class: ua.alesandrahvozdenko.tests.TestDemo</td>
+<td title='ua.alesandrahvozdenko.tests.testNG.TestDemo.UserPageIsDisplayedWithMainElements()'><b>UserPageIsDisplayedWithMainElements</b><br>Test class: ua.alesandrahvozdenko.tests.testNG.TestDemo</td>
 <td><div><pre>org.testng.TestNGException: 
-Method void ua.alesandrahvozdenko.tests.TestDemo.UserPageIsDisplayedWithMainElements(java.lang.String,int) requires a @DataProvider named : invalidCredential
+Method void ua.alesandrahvozdenko.tests.testNG.TestDemo.UserPageIsDisplayedWithMainElements(java.lang.String,int) requires a @DataProvider named : invalidCredential
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1413378318", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1413378318'><pre>org.testng.TestNGException: 
-Method void ua.alesandrahvozdenko.tests.TestDemo.UserPageIsDisplayedWithMainElements(java.lang.String,int) requires a @DataProvider named : invalidCredential
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1161322357", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1161322357'><pre>org.testng.TestNGException: 
+Method void ua.alesandrahvozdenko.tests.testNG.TestDemo.UserPageIsDisplayedWithMainElements(java.lang.String,int) requires a @DataProvider named : invalidCredential
 	at org.testng.internal.Parameters.findDataProvider(Parameters.java:563)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:776)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:744)
@@ -119,7 +119,98 @@ Method void ua.alesandrahvozdenko.tests.TestDemo.UserPageIsDisplayedWithMainElem
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </pre></div></td>
 <td>0</td>
-<td>ua.alesandrahvozdenko.tests.TestDemo@5bfbf16f</td></tr>
+<td>ua.alesandrahvozdenko.tests.testNG.TestDemo@35841320</td></tr>
+<tr>
+<td title='ua.alesandrahvozdenko.tests.simpleSelenium.SeleniumDemoTest.test1()'><b>test1</b><br>Test class: ua.alesandrahvozdenko.tests.simpleSelenium.SeleniumDemoTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MacBook-Air-Alexandra.local&apos;, ip: &apos;fe80:0:0:0:c20:9c05:3345:137a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;13.0.2&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at ua.alesandrahvozdenko.tests.simpleSelenium.SeleniumDemoTest.test1(SeleniumDemoTest.java:11)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:10808/status] to be available after 20007 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
+	... 47 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 48 more
+... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace938463537", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace938463537'><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MacBook-Air-Alexandra.local&apos;, ip: &apos;fe80:0:0:0:c20:9c05:3345:137a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;13.0.2&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at ua.alesandrahvozdenko.tests.simpleSelenium.SeleniumDemoTest.test1(SeleniumDemoTest.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:10808/status] to be available after 20007 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
+	... 47 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 48 more
+</pre></div></td>
+<td>20</td>
+<td>ua.alesandrahvozdenko.tests.simpleSelenium.SeleniumDemoTest@7ae0a9ec</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -129,30 +220,30 @@ Method void ua.alesandrahvozdenko.tests.TestDemo.UserPageIsDisplayedWithMainElem
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ua.alesandrahvozdenko.tests.TestDemo.demoTest()'><b>demoTest</b><br>Test class: ua.alesandrahvozdenko.tests.TestDemo</td>
+<td title='ua.alesandrahvozdenko.tests.testNG.TestDemo.demoTest()'><b>demoTest</b><br>Test class: ua.alesandrahvozdenko.tests.testNG.TestDemo</td>
 <td></td>
 <td>0</td>
-<td>ua.alesandrahvozdenko.tests.TestDemo@5bfbf16f</td></tr>
+<td>ua.alesandrahvozdenko.tests.testNG.TestDemo@35841320</td></tr>
 <tr>
-<td title='ua.alesandrahvozdenko.tests.TestDemo.demoTest1()'><b>demoTest1</b><br>Test class: ua.alesandrahvozdenko.tests.TestDemo<br>Test method:  Помещается тестовый сценарий</td>
+<td title='ua.alesandrahvozdenko.tests.testNG.TestDemo.demoTest1()'><b>demoTest1</b><br>Test class: ua.alesandrahvozdenko.tests.testNG.TestDemo<br>Test method:  Помещается тестовый сценарий</td>
 <td></td>
 <td>0</td>
-<td>ua.alesandrahvozdenko.tests.TestDemo@5bfbf16f</td></tr>
+<td>ua.alesandrahvozdenko.tests.testNG.TestDemo@35841320</td></tr>
 <tr>
-<td title='ua.alesandrahvozdenko.tests.TestDemo.demoTest2()'><b>demoTest2</b><br>Test class: ua.alesandrahvozdenko.tests.TestDemo</td>
+<td title='ua.alesandrahvozdenko.tests.testNG.TestDemo.demoTest2()'><b>demoTest2</b><br>Test class: ua.alesandrahvozdenko.tests.testNG.TestDemo</td>
 <td></td>
 <td>0</td>
-<td>ua.alesandrahvozdenko.tests.TestDemo@5bfbf16f</td></tr>
+<td>ua.alesandrahvozdenko.tests.testNG.TestDemo@35841320</td></tr>
 <tr>
-<td title='ua.alesandrahvozdenko.tests.TestDemo.demoTestDependentOnDemo3()'><b>demoTestDependentOnDemo3</b><br>Test class: ua.alesandrahvozdenko.tests.TestDemo</td>
+<td title='ua.alesandrahvozdenko.tests.testNG.TestDemo.demoTestDependentOnDemo3()'><b>demoTestDependentOnDemo3</b><br>Test class: ua.alesandrahvozdenko.tests.testNG.TestDemo</td>
 <td></td>
 <td>0</td>
-<td>ua.alesandrahvozdenko.tests.TestDemo@5bfbf16f</td></tr>
+<td>ua.alesandrahvozdenko.tests.testNG.TestDemo@35841320</td></tr>
 <tr>
-<td title='ua.alesandrahvozdenko.tests.TestDemo2.myTest()'><b>myTest</b><br>Test class: ua.alesandrahvozdenko.tests.TestDemo2</td>
+<td title='ua.alesandrahvozdenko.tests.testNG.TestDemo2.myTest()'><b>myTest</b><br>Test class: ua.alesandrahvozdenko.tests.testNG.TestDemo2</td>
 <td></td>
 <td>0</td>
-<td>ua.alesandrahvozdenko.tests.TestDemo2@59906517</td></tr>
+<td>ua.alesandrahvozdenko.tests.testNG.TestDemo2@1972e513</td></tr>
 </table><p>
 </body>
 </html>

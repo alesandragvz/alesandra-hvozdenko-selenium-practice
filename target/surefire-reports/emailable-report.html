@@ -9,18 +9,43 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Command line suite</th></tr>
-<tr><td><a href="#t0">Command line test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">237</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Command line test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">20,877</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">ua.alesandrahvozdenko.tests.TestDemo</td><td><a href="#m0">UserPageIsDisplayedWithMainElements</a></td><td rowspan="1">1580410067005</td><td rowspan="1">0</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">ua.alesandrahvozdenko.tests.TestDemo</td><td><a href="#m1">demoTest</a></td><td rowspan="1">1580410067106</td><td rowspan="1">60</td></tr><tr class="passedeven"><td><a href="#m2">demoTest1</a></td><td rowspan="1">1580410067061</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m3">demoTest2</a></td><td rowspan="1">1580410067170</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m4">demoTestDependentOnDemo3</a></td><td rowspan="1">1580410067100</td><td rowspan="1">1</td></tr><tr class="passedodd"><td rowspan="1">ua.alesandrahvozdenko.tests.TestDemo2</td><td><a href="#m5">myTest</a></td><td rowspan="1">1580410067089</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">ua.alesandrahvozdenko.tests.simpleSelenium.SeleniumDemoTest</td><td><a href="#m0">test1</a></td><td rowspan="1">1580412372639</td><td rowspan="1">20768</td></tr><tr class="failedodd"><td rowspan="1">ua.alesandrahvozdenko.tests.testNG.TestDemo</td><td><a href="#m1">UserPageIsDisplayedWithMainElements</a></td><td rowspan="1">1580412372599</td><td rowspan="1">0</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">ua.alesandrahvozdenko.tests.testNG.TestDemo</td><td><a href="#m2">demoTest</a></td><td rowspan="1">1580412393421</td><td rowspan="1">26</td></tr><tr class="passedeven"><td><a href="#m3">demoTest1</a></td><td rowspan="1">1580412372627</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m4">demoTest2</a></td><td rowspan="1">1580412393449</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m5">demoTestDependentOnDemo3</a></td><td rowspan="1">1580412393419</td><td rowspan="1">0</td></tr><tr class="passedodd"><td rowspan="1">ua.alesandrahvozdenko.tests.testNG.TestDemo2</td><td><a href="#m6">myTest</a></td><td rowspan="1">1580412393417</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Command line test</h2><h3 id="m0">ua.alesandrahvozdenko.tests.TestDemo#UserPageIsDisplayedWithMainElements</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Method void ua.alesandrahvozdenko.tests.TestDemo.UserPageIsDisplayedWithMainElements(java.lang.String,int) requires a @DataProvider named : invalidCredential
+<h2>Command line test</h2><h3 id="m0">ua.alesandrahvozdenko.tests.simpleSelenium.SeleniumDemoTest#test1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MacBook-Air-Alexandra.local&apos;, ip: &apos;fe80:0:0:0:c20:9c05:3345:137a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;13.0.2&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at ua.alesandrahvozdenko.tests.simpleSelenium.SeleniumDemoTest.test1(SeleniumDemoTest.java:11)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:10808/status] to be available after 20007 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
+	... 47 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 48 more
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">ua.alesandrahvozdenko.tests.testNG.TestDemo#UserPageIsDisplayedWithMainElements</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Method void ua.alesandrahvozdenko.tests.testNG.TestDemo.UserPageIsDisplayedWithMainElements(java.lang.String,int) requires a @DataProvider named : invalidCredential
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
 ... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">ua.alesandrahvozdenko.tests.TestDemo#demoTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">ua.alesandrahvozdenko.tests.TestDemo#demoTest1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">ua.alesandrahvozdenko.tests.TestDemo#demoTest2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">ua.alesandrahvozdenko.tests.TestDemo#demoTestDependentOnDemo3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">ua.alesandrahvozdenko.tests.TestDemo2#myTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">ua.alesandrahvozdenko.tests.testNG.TestDemo#demoTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">ua.alesandrahvozdenko.tests.testNG.TestDemo#demoTest1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">ua.alesandrahvozdenko.tests.testNG.TestDemo#demoTest2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">ua.alesandrahvozdenko.tests.testNG.TestDemo#demoTestDependentOnDemo3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">ua.alesandrahvozdenko.tests.testNG.TestDemo2#myTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

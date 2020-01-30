@@ -1,10 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.322 sec <<< FAILURE!
-UserPageIsDisplayedWithMainElements(ua.alesandrahvozdenko.tests.TestDemo)  Time elapsed: 0.743 sec  <<< FAILURE!
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 22.396 sec <<< FAILURE!
+UserPageIsDisplayedWithMainElements(ua.alesandrahvozdenko.tests.testNG.TestDemo)  Time elapsed: 1.382 sec  <<< FAILURE!
 org.testng.TestNGException: 
-Method void ua.alesandrahvozdenko.tests.TestDemo.UserPageIsDisplayedWithMainElements(java.lang.String,int) requires a @DataProvider named : invalidCredential
+Method void ua.alesandrahvozdenko.tests.testNG.TestDemo.UserPageIsDisplayedWithMainElements(java.lang.String,int) requires a @DataProvider named : invalidCredential
 	at org.testng.internal.Parameters.findDataProvider(Parameters.java:563)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:776)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:744)
@@ -40,4 +40,29 @@ Method void ua.alesandrahvozdenko.tests.TestDemo.UserPageIsDisplayedWithMainElem
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+test1(ua.alesandrahvozdenko.tests.simpleSelenium.SeleniumDemoTest)  Time elapsed: 20.767 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Air-Alexandra.local', ip: 'fe80:0:0:0:c20:9c05:3345:137a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '13.0.2'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at ua.alesandrahvozdenko.tests.simpleSelenium.SeleniumDemoTest.test1(SeleniumDemoTest.java:11)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:10808/status] to be available after 20007 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
+	... 47 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 48 more
 

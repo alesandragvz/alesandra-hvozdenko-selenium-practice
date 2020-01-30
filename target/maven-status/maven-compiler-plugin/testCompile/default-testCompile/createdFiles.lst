@@ -1,3 +1,4 @@
-ua/alesandrahvozdenko/tests/TestDemo2.class
-ua/alesandrahvozdenko/tests/TestDemo.class
-ua/alesandrahvozdenko/tests/BaseTest.class
+ua/alesandrahvozdenko/tests/testNG/BaseTest.class
+ua/alesandrahvozdenko/tests/testNG/TestDemo.class
+ua/alesandrahvozdenko/tests/testNG/TestDemo2.class
+ua/alesandrahvozdenko/tests/simpleSelenium/SeleniumDemoTest.class
